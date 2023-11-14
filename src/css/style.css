@@ -1,0 +1,141 @@
+.cabecalho {
+    /* background:linear-gradient(#DAA520, #000000); */
+    background-image: url(../imagens/capa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 250px;
+}
+
+.cabecalho img {
+    width: 150px;
+    border: 2px solid #000;
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px 0 #000;
+}
+
+.cabecalho .titulo {
+    font-weight: bold;
+	font-size: 45px;
+    text-decoration: underline;
+}
+
+.cabecalho .titulo-navegacao {
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho ul {
+    display: flex;
+    justify-content: space-around;
+	font-weight: bold;
+	font-size: 20px;
+    margin-top: 30px;
+}
+
+.cabecalho li {
+    transition: 0.4s ease-in-out;
+    color: #C78C19;
+}
+
+.cabecalho li:hover {
+    color: #C78C19;
+    transform: scale(1.2);
+}
+
+.capitulos {
+    background: linear-gradient(-233deg, #000 40%, rgba(0, 0, 0, 0) 65%) no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 615px;
+    overflow-y: auto;
+    border: #C78C19 solid 2px;
+}
+
+.subtitulo-capitulo {
+    text-transform: uppercase;
+    font-size: 35px;
+    color: #C78C19;
+    text-decoration: underline;
+    margin: 25px;
+}
+    
+.capitulos .resumos {
+    display: none;
+    gap: 25px;
+    position: relative;
+    text-shadow: 2px 2px 1px rgba(119, 118, 118, 0.6);
+    color: #ffffff;
+}
+
+.capitulos .resumos.aberto {
+    display: block;
+}
+
+.capitulos .titulo-capitulo {
+    font-size: 25px;
+    margin-left: 450px;
+    margin-bottom: 20px;
+}
+
+.capitulos .resumo {
+    font-size: 17px;
+    margin: 0 100px 30px;
+    line-height: 30px;
+}
+
+.seta.btn-voltar {
+    left: 20px;
+    transform: rotateY(180deg);
+}
+
+.seta.btn-avancar {
+    right: 20px;
+}
+
+.seta {
+    background: url(../imagens/seta.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    text-indent: 100%;
+    overflow: hidden;
+    top: 300px;
+}
+
+/* Roda Pé */
+.rodape {
+    background-image: url(../imagens/backgroud-footer.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #C78C19;
+    height: 250px;
+    gap: 30px;
+    line-height: 40px;
+}
+
+.redes-sociais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.redes-sociais .icone {
+    width: 40px;
+    transition: 0.3s ease-in-out;
+}
+
+.redes-sociais .icone:hover{
+    transform: scale(1.2);
+}
